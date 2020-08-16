@@ -14,7 +14,7 @@ public class BasicAuth{
         if(response.getStatusCode() == 200) {
         //Deserialize JSON response 
             JsonToApex result = (JsonToApex) JSON.deserializeStrict(response.getBody(),JsonToApex.class);
-            //System.debug(result.max + ' -- ' + result.min);
+            System.debug(result.max + ' -- ' + result.min);
             Integer maxValue = result.max;
             Integer minValue = result.min;
             
